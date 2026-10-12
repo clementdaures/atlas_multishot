@@ -30,13 +30,13 @@ except ImportError:
 import hou
 
 # atlas modules
-from atlas_manager.plugins.lighting.core.utils.parse_sequence import extract_seq_shot
-from atlas_manager.plugins.lighting.core.utils.scan_shot import discover_shots
-from atlas_manager.plugins.lighting.core.utils.user_db import list_artist_names
-from atlas_manager.plugins.lighting.core.assignment_manager import load_assignments, save_assignments
-from atlas_manager.plugins.lighting.core.stage_manager import update_sequence_parameter
-from atlas_manager.plugins.lighting.ui.stylesheet.style import ATLAS_STYLE
-from atlas_manager.plugins.lighting.core.utils.user_db import get_user_json_path, get_assign_json_path
+from atlas_multishot.core.utils.parse_sequence import extract_seq_shot
+from atlas_multishot.core.utils.scan_shot import discover_shots
+from atlas_multishot.core.utils.user_db import list_artist_names
+from atlas_multishot.core.assignment_manager import load_assignments, save_assignments
+from atlas_multishot.core.stage_manager import update_sequence_parameter
+from atlas_multishot.ui.stylesheet.style import ATLAS_STYLE
+from atlas_multishot.core.utils.user_db import get_user_json_path, get_assign_json_path
 
 # endregion
 

@@ -12,7 +12,7 @@ Created: 2025
 import hou
 
 # atlas modules
-import atlas_manager.plugins.lighting.core.writer.layer_discovery as layer_discovery
+import atlas_multishot.core.writer.layer_discovery as layer_discovery
 
 # endregion
 

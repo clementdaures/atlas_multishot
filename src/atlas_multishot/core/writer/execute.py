@@ -18,7 +18,7 @@ import os
 import hou
 
 # atlas modules
-import atlas_manager.plugins.lighting.core.writer.constants as constants
+import atlas_multishot.core.writer.constants as constants
 
 # endregion
 

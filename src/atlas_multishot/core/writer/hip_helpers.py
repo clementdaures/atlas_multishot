@@ -15,7 +15,7 @@ import os
 import hou
 
 # atlas modules
-import atlas_manager.plugins.lighting.core.utils.parse_sequence as parse_sequence
+import atlas_multishot.core.utils.parse_sequence as parse_sequence
 
 # endregion
 

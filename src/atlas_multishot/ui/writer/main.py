@@ -28,17 +28,17 @@ except ImportError:
 import hou
 
 # atlas modules
-import atlas_manager.plugins.lighting.core.utils.scan_shot as scan_shot
-import atlas_manager.plugins.lighting.core.utils.user_db as user_db
-import atlas_manager.plugins.lighting.core.assignment_manager as assignment_manager
-import atlas_manager.plugins.lighting.core.stage_manager as stage_manager
-import atlas_manager.plugins.lighting.ui.stylesheet.style as style
-import atlas_manager.plugins.lighting.core.writer.hip_helpers as hip_helpers
-import atlas_manager.plugins.lighting.core.writer.layer_discovery as layer_discovery
-import atlas_manager.plugins.lighting.core.writer.bypass_extents as bypass_extents
-import atlas_manager.plugins.lighting.core.writer.execute as execute
-import atlas_manager.plugins.lighting.core.writer.constants as constants
-import atlas_manager.plugins.lighting.ui.writer.widget.shot_panel as shot_panel
+import atlas_multishot.core.utils.scan_shot as scan_shot
+import atlas_multishot.core.utils.user_db as user_db
+import atlas_multishot.core.assignment_manager as assignment_manager
+import atlas_multishot.core.stage_manager as stage_manager
+import atlas_multishot.ui.stylesheet.style as style
+import atlas_multishot.core.writer.hip_helpers as hip_helpers
+import atlas_multishot.core.writer.layer_discovery as layer_discovery
+import atlas_multishot.core.writer.bypass_extents as bypass_extents
+import atlas_multishot.core.writer.execute as execute
+import atlas_multishot.core.writer.constants as constants
+import atlas_multishot.ui.writer.widget.shot_panel as shot_panel
 
 # endregion
 
