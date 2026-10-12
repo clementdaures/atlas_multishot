@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlas-multishot"
+version = "1.0.0"
+description = "Multi-shot lighting tool (shot assignment, shot selection and multi-shot USD writer) for the Andhakara pipeline (Houdini Solaris / PySide2-PySide6)."
+readme = "README.md"
+license = { text = "GPL-3.0-only" }
+authors = [{ name = "Clement Daures", email = "support@clementdaures.com" }]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+]
+
+# `hou`, PySide2 / PySide6 and `atlas_manager` (Guard) are NOT listed here
+# on purpose: they are only available inside Houdini's own bundled Python
+# interpreter and the Atlas Manager pipeline. `core/` is meant to be tested
+# with a mocked `hou` rather than a pip-installed one.
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+    "black>=24",
+]
+
+[project.urls]
+Homepage = "https://github.com/clementdaures/atlas_multishot"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = [
+    "E501", # line length is handled by black
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
